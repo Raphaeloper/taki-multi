@@ -26,3 +26,14 @@ function addCardsToDeck(numOfCardsPerColor, card, deck) {
         }
     }
 }
+
+function randomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function shuffleDeck(deck) {
+    for (let cardIndex = deck.length - 1; cardIndex > 0; cardIndex--) {
+        let secondIndex = randomInt(cardIndex + 1);
+        [deck[cardIndex], deck[secondIndex]] = [deck[secondIndex], deck[cardIndex]]
+    }
+}
