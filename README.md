@@ -1,6 +1,7 @@
 # Taki multiplayer client
 ## Development milestones:
-* Generate deck
+* ~~Generate deck~~
+* Shuffle deck
 * Console "game"
   * Hand display
   * Card pool display
