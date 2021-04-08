@@ -33,66 +33,82 @@ export const cardIDs = {
 export const cards = [
     {
         id: cardIDs.one,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1 
     },
     {
         id: cardIDs.pTwo,
-        type: cardTypes.coloredAction
+        type: cardTypes.coloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.three,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.four,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.five,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.six,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.seven,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.eight,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.nine,
-        type: cardTypes.number
+        type: cardTypes.number,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.skip,
-        type: cardTypes.coloredAction
+        type: cardTypes.coloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.reverse,
-        type: cardTypes.coloredAction
+        type: cardTypes.coloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.plus,
-        type: cardTypes.coloredAction
+        type: cardTypes.coloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.taki,
-        type: cardTypes.coloredAction
+        type: cardTypes.coloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.color_change,
-        type: cardTypes.uncoloredAction
+        type: cardTypes.uncoloredAction,
+        numPerDeckPerColor: 2
     },
     {
         id: cardIDs.super_taki,
-        type: cardTypes.uncoloredAction
+        type: cardTypes.uncoloredAction,
+        numPerDeckPerColor: 1
     },
     {
         id: cardIDs.king,
-        type: cardTypes.uncoloredAction
+        type: cardTypes.uncoloredAction,
+        numPerDeckPerColor: 1
     },
 ]

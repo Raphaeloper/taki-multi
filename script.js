@@ -1,15 +1,12 @@
 import { cardTypes, cardColors, cardIDs, cards } from "./misc/cards.js";
 
 const game = {};
+const numOfDecksToCombine = 2;
 
 function createDeck() {
     let deck = [];
     cards.forEach((card) => {
-        if (card.id === cardIDs.color_change) {
-            addCardsToDeck(4, card, deck);
-        } else {
-            addCardsToDeck(2, card, deck);
-        }
+        addCardsToDeck(numOfDecksToCombine * card.numPerDeckPerColor, card, deck);
     });
     return deck;
 }
@@ -60,8 +57,8 @@ function createPlayersFromNameList(...playerNames) {
 }
 
 function dealCardsToPlayer(player, numOfCards) {
-    for(let cardsDealt = 0; cardsDealt < numOfCards; cardsDealt++){
-        if(isDeckEmpty()){
+    for (let cardsDealt = 0; cardsDealt < numOfCards; cardsDealt++) {
+        if (isDeckEmpty()) {
             reshufflePile(game.pile, game.deck)
         }
 
@@ -69,7 +66,7 @@ function dealCardsToPlayer(player, numOfCards) {
     }
 }
 
-function reshufflePile(pile, deck){
+function reshufflePile(pile, deck) {
     const topCard = pile.pop();
     shuffle(pile);
     deck = pile;
